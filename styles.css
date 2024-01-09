@@ -1,6 +1,14 @@
+/* Define the Quicksand font */
+@font-face {
+  font-family: 'Quicksand';
+  src: url('Quicksand/static/Quicksand-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* body styling */
 body {
-  font-family: Arial, sans-serif; 
+  font-family: 'Quicksand';
   margin: 0; 
   padding: 0; 
   display: flex; /* Use Flexbox for layout */
