@@ -1,3 +1,4 @@
+// Wait for the DOM to fully load before executing the script
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('name-form');
   const nameInput = document.getElementById('name');
