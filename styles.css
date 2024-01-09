@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('background.jpg'); /* Update with the path to your image */
+  background-size: cover; /* Cover ensures the image covers the whole area */
+  background-position: center; /* Center the image in the page */
+  background-attachment: fixed; /* Fixed position even when you scroll */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+#main-container {
+  display: flex;
+  width: 80%; /* Adjusted width for a two-column layout */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+#form-section, #result-section {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#form-section {
+  max-width: 50%; /* Adjusted for a two-column layout */
+}
+
+#result-section {
+  max-width: 50%; /* Adjusted for a two-column layout */
+  padding-left: 40px; /* Space between columns */
+  border-left: 2px solid #ddd; /* Separator line */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Adjusted styles for radio buttons and their labels */
+input[type="radio"] + label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Adjusted styles for submit and save buttons */
+button {
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 10px; /* Spacing above buttons */
+}
+
+#clear {
+  background-color: #ff4d4d;
+  color: white;
+  margin-top: 10px; /* Spacing above clear button */
+}
+
+#prediction, #saved-answer {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+}

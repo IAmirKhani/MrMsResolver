@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gender Predictor</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="main-container">
+  <div id="form-section">
+    <h1>Mr. or Ms.?</h1>
+    <form id="name-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" maxlength="255" required pattern="[A-Za-z ]+">
+      <label class="gender-label">Male
+        <input type="radio" id="male" name="gender" value="male">
+      </label>
+      <label class="gender-label">Female
+        <input type="radio" id="female" name="gender" value="female">
+      </label>
+      <button type="submit">Submit</button>
+      <button type="button" id="save">Save</button>
+    </form>
+  </div>
+  <div id="result-section">
+    <h2>Prediction</h2>
+    <div id="prediction">Male 0.97</div> <!-- This will be dynamically updated -->
+    <h2>Saved Answer</h2>
+    <div id="saved-answer"><!-- Saved answer will be displayed here --></div>
+    <button type="button" id="clear">Clear</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
